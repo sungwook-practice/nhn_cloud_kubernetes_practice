@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-static-001
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: sc-default
+  cinder:
+    fsType: "ext3"
+    # your volume ID
+    volumeID: "9ae5dd7a-ca1c-4745-86e1-4fd26dd812d5"
