@@ -1,7 +1,7 @@
 # 개요
 * 동적 프로비저닝 예제
 
-# 실행방법
+# 예제 실행
 * 쿠버네티스 리소스 배포
 ```shell
 kubectl apply -f ./
@@ -19,7 +19,7 @@ kubectl -n default get po,pvc
 
 ![](imgs/nhn_cloud_storage.png)
 
-# 삭제
+# 예제 삭제
 ```shell
 kubectl delete -f ./
 ```
